@@ -2,25 +2,25 @@ Data_Preparation:
   test_size: 0.25
   random_state: 42
 
-# Train:
-#   Random_Forest:
-#     n_estimators: 100
-#     criterion: 'squared_error'
-#     max_depth: 14
-#     max_features: None
-#     min_samples_split: 10
-#     min_samples_leaf: 3
-#     max_samples: 0.7401996728259118
-#     verbose: 1
-#     n_jobs: -1
+Train:
+  Random_Forest:
+    n_estimators: 100
+    criterion: 'squared_error'
+    max_depth: 14
+    max_features: null
+    min_samples_split: 10
+    min_samples_leaf: 3
+    max_samples: 0.7401996728259118
+    verbose: 1
+    n_jobs: -1
   
-#   LightGBM:
-#     n_estimators: 198
-#     max_depth: 34
-#     learning_rate: 0.3212545644265231
-#     subsample: 0.6862613600808749
-#     min_child_weight: 5
-#     min_split_gain: 0.005201379123869643
-#     reg_lambda: 37.88504763245978
-#     n_jobs: -1
+  LightGBM:
+    n_estimators: 198
+    max_depth: 34
+    learning_rate: 0.3212545644265231
+    subsample: 0.6862613600808749
+    min_child_weight: 5
+    min_split_gain: 0.005201379123869643
+    reg_lambda: 37.88504763245978
+    n_jobs: -1
 
