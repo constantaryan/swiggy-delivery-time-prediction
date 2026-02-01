@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  data_cleaning:
+    cmd: python src/data/data_cleaning.py
+    deps:
+    - path: data/raw/swiggy.csv
+      hash: md5
+      md5: 0b050b37dfe6cfbfaa18d7cb4e454377
+      size: 7772212
+    - path: src/data/data_cleaning.py
+      hash: md5
+      md5: fb42c0c5daa847f7f65efd978a8d2d65
+      size: 9559
+    outs:
+    - path: data/cleaned/swiggy_cleaned.csv
+      hash: md5
+      md5: 4918716e52fc57babdcd400dfb3c3f29
+      size: 4508527
