@@ -16,6 +16,11 @@ jobs:
           python-version: '3.11.7'
           cache: 'pip' 
 
+      - name: Install AWS CLI v2
+        uses: unfor19/install-aws-cli-action@v1
+        with:
+          version: 2    
+          
       - name: Install Packages
         run: |
           python -m pip install --upgrade pip
