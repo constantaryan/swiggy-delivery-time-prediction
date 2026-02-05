@@ -1,0 +1,63 @@
+
+__pycache__/
+
+.venv/
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+; # =============================
+; # FastAPI / Server
+; # =============================
+*.log
+logs/
+
+
+.ipynb_checkpoints/
+*.ipynb
+
+
+# =============================
+# DVC (not used for inference artifacts)
+# =============================
+.dvc/cache/
+.dvc/tmp/
+
+# =============================
+# Data & Models
+# (Pulled dynamically from MLflow Registry)
+# =============================
+data/
+datasets/
+raw/
+processed/
+interim/
+
+# =============================
+# Testing & Coverage
+# =============================
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =============================
+# Git
+# =============================
+.git/
+.gitignore
+
+# =============================
+# IDE / OS
+# =============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =============================
+# Docker (optional)
+# =============================
+docker-compose.yml
